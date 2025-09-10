@@ -1,9 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-// Assume tabs and setActive are passed as props or defined in the parent component
-const tabs = ["Home", "Projects", "Skills", "Links"];
-const active = "Home"; // This would typically be managed by state
 
 const Header = ({ tabs, active, setActive }) => {
   return (

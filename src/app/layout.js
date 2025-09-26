@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Nikhil Portfolio",
-  description: "Animated Single Page Portfolio",
+  title: "Nikhil Saxena",
+  description: "This is my Personal Portfolio Website",
 };
 
 export default function RootLayout({ children }) {

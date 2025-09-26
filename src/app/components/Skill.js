@@ -28,6 +28,7 @@ import {
   SiJsonwebtokens,
   SiFastify,
   SiPrisma,
+  SiSocketdotio,
 } from 'react-icons/si';
 import { FaC } from 'react-icons/fa6';
 
@@ -62,6 +63,7 @@ const skills = [
       { name: 'Passport.js', icon: <SiPassport className="text-purple-700" /> },
       { name: 'JWT', icon: <SiJsonwebtokens className="text-black" /> },
       { name: 'Fastify', icon: <SiFastify className="text-black" /> },
+      { name: 'Socket.IO', icon: <SiSocketdotio className="text-black" /> },
       { name: 'REST APIs', icon: <FaServer className="text-blue-500" /> },
     ],
   },

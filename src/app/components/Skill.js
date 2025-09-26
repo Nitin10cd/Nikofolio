@@ -12,7 +12,9 @@ import {
   FaProjectDiagram,
   FaObjectGroup,
   FaJava,
+  FaNetworkWired,
 } from 'react-icons/fa';
+import { GiAtom } from 'react-icons/gi';
 import {
   SiNextdotjs,
   SiRedux,
@@ -25,6 +27,7 @@ import {
   SiTypescript,
   SiJsonwebtokens,
   SiFastify,
+  SiPrisma,
 } from 'react-icons/si';
 import { FaC } from 'react-icons/fa6';
 
@@ -44,10 +47,11 @@ const skills = [
     category: 'Frontend',
     items: [
       { name: 'React.js', icon: <FaReact className="text-blue-400" /> },
-      { name: 'Next.js', icon: <SiNextdotjs className="text-black " /> },
+      { name: 'Next.js', icon: <SiNextdotjs className="text-black" /> },
       { name: 'Redux Toolkit', icon: <SiRedux className="text-purple-600" /> },
       { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-cyan-400" /> },
       { name: 'HTML/CSS', icon: <FaHtml5 className="text-orange-500" /> },
+      { name: 'Zustand', icon: <GiAtom className="text-green-500" /> },
     ],
   },
   {
@@ -67,6 +71,7 @@ const skills = [
       { name: 'MongoDB', icon: <SiMongodb className="text-green-600" /> },
       { name: 'PostgreSQL', icon: <SiPostgresql className="text-blue-600" /> },
       { name: 'SQL', icon: <FaDatabase className="text-yellow-500" /> },
+      { name: 'Prisma', icon: <SiPrisma className="text-indigo-500" /> },
     ],
   },
   {
@@ -76,79 +81,67 @@ const skills = [
       { name: 'DBMS', icon: <FaDatabase className="text-fuchsia-500" /> },
       { name: 'System Design', icon: <FaProjectDiagram className="text-blue-400" /> },
       { name: 'OOPS', icon: <FaObjectGroup className="text-black" /> },
+      { name: 'Networking', icon: <FaNetworkWired className="text-green-500" /> },
+      { name: 'Operating Systems', icon: <FaServer className="text-indigo-500" /> },
+      { name: 'Algorithms', icon: <GiAtom className="text-pink-500" /> },
     ],
   },
 ];
 
 const SkillsSection = () => {
   return (
-    <section className="space-y-10 py-12">
-      
+    <section className="space-y-16 py-16 bg-gray-50">
       {skills.map((skillCategory, categoryIdx) => (
         <React.Fragment key={skillCategory.category}>
+          {/* Category Header */}
           <motion.h3
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: categoryIdx * 0.1, duration: 0.5 }}
-            className="text-2xl font-bold text-gray-700 pb-2 mb-6"
+            className="text-3xl font-extrabold text-gray-800 mb-10 relative inline-block"
           >
             {skillCategory.category}
+            <span className="absolute left-0 bottom-0 w-20 h-1 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full"></span>
           </motion.h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+
+          {/* Skills Grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
             {skillCategory.items.map((s, itemIdx) => (
               <motion.div
                 key={s.name}
-                initial={{ opacity: 0, y: 8 }}
+                initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: (categoryIdx * 0.2) + (itemIdx * 0.05) }}
-                whileHover={{ scale: 1.03 }}
-                className="flex flex-col items-center gap-3 p-4"
+                transition={{ delay: categoryIdx * 0.2 + itemIdx * 0.05, duration: 0.4 }}
+                whileHover={{ scale: 1.08, y: -4 }}
+                className="flex flex-col items-center gap-4 p-5 bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300"
               >
                 <div className="relative">
+                  {/* Gradient Glow */}
+                  <div className="absolute -inset-1 rounded-full bg-gradient-to-tr from-blue-400 to-purple-500 blur-xl opacity-30"></div>
+                  {/* Icon Circle */}
                   <motion.div
                     initial={{ scale: 1 }}
-                    animate={{
-                      scale: [1, 1.03, 1],
-                      rotate: [0, 2, -2, 0],
-                    }}
-                    transition={{
-                      duration: 3 + itemIdx * 0.2,
-                      repeat: Infinity,
-                    }}
-                    className="w-20 h-20 rounded-full flex items-center justify-center bg-white shadow-md border border-gray-100"
+                    animate={{ scale: [1, 1.05, 1], rotate: [0, 3, -3, 0] }}
+                    transition={{ duration: 3 + itemIdx * 0.2, repeat: Infinity }}
+                    className="w-20 h-20 rounded-full flex items-center justify-center bg-white shadow-md border border-gray-100 relative z-10"
                   >
-                    <div className="w-14 h-14 rounded-full flex items-center justify-center bg-white/90">
+                    <div className="w-16 h-16 rounded-full flex items-center justify-center bg-white/95">
                       <div className="text-4xl">{s.icon}</div>
                     </div>
                   </motion.div>
-                  <svg
-                    className="absolute -inset-2 w-24 h-24 opacity-30"
-                    viewBox="0 0 100 100"
-                    fill="none"
-                  >
-                    <circle
-                      cx="50"
-                      cy="50"
-                      r="40"
-                      stroke="rgba(138, 180, 248, 0.09)"
-                      strokeWidth="2"
-                    />
-                    <circle
-                      cx="50"
-                      cy="50"
-                      r="28"
-                      stroke="rgba(255, 210, 100, 0.06)"
-                      strokeWidth="1.8"
-                    />
-                  </svg>
                 </div>
-                <div className="text-sm sm:text-base font-medium text-center mt-2 text-gray-600">
+
+                {/* Skill Name */}
+                <div className="text-sm sm:text-base font-semibold text-gray-700 text-center">
                   {s.name}
                 </div>
               </motion.div>
             ))}
           </div>
-          {categoryIdx < skills.length - 1 && <hr className="my-10 border-gray-200" />}
+
+          {categoryIdx < skills.length - 1 && (
+            <hr className="my-16 border-t-2 border-gray-200" />
+          )}
         </React.Fragment>
       ))}
     </section>

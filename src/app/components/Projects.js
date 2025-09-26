@@ -15,7 +15,7 @@ const projects = [
             shine: 'rgba(255, 193, 7, 0.4)',
         },
         icon: Sun,
-        demoLink: 'https://www.youtube.com/watch?v=xxxxxxxx', 
+        demoLink: 'https://www.linkedin.com/posts/nikhil-saxena-76901a2a5_mern-reactjs-nodejs-activity-7356497961524097024-oSrd?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEdVj9oB4CAhnQ-TRyk-j27eD8jqwhJpxJY',
         githubLink: 'https://github.com/Nikhil2253/LuminaSocial', 
     },
     {
@@ -31,7 +31,7 @@ const projects = [
             shine: 'rgba(144, 205, 244, 0.4)',
         },
         icon: BarChart,
-        demoLink: 'https://www.youtube.com/watch?v=xxxxxxxx',
+        demoLink: 'https://www.linkedin.com/posts/nikhil-saxena-76901a2a5_hello-everyone-i-made-sorting-algorithm-activity-7264473138111930398-f5nd?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEdVj9oB4CAhnQ-TRyk-j27eD8jqwhJpxJY',
         githubLink: 'https://github.com/Nikhil2253/Sorting_Algo_Visualizism-',
     },
     {
@@ -47,7 +47,7 @@ const projects = [
             shine: 'rgba(183, 148, 244, 0.4)',
         },
         icon: Building2,
-        demoLink: 'https://www.youtube.com/watch?v=xxxxxxxx',
+        demoLink: 'https://www.linkedin.com/posts/nikhil-saxena-76901a2a5_hackathon-mernstack-teamwork-activity-7325529229025038337-tXyQ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEdVj9oB4CAhnQ-TRyk-j27eD8jqwhJpxJY',
         githubLink: 'https://github.com/Nikhil2253/Campus-Connect',
     },
     {
@@ -63,7 +63,7 @@ const projects = [
             shine: 'rgba(159, 255, 150, 0.4)',
         },
         icon: Sparkles,
-        demoLink: 'https://www.youtube.com/watch?v=xxxxxxxx',
+        demoLink: 'https://www.linkedin.com/posts/nikhil-saxena-76901a2a5_fullstackdevelopment-mernstack-react-activity-7305101516518871040-vcVA?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEdVj9oB4CAhnQ-TRyk-j27eD8jqwhJpxJY',
         githubLink: 'https://github.com/Nikhil2253/MyMBTI',
     },
     {
@@ -79,7 +79,7 @@ const projects = [
             shine: 'rgba(255, 90, 100, 0.4)',
         },
         icon: Globe,
-        demoLink: 'https://www.youtube.com/watch?v=xxxxxxxx',
+        demoLink: 'https://www.linkedin.com/posts/nikhil-saxena-76901a2a5_fullstackdevelopment-mernstack-react-activity-7305101516518871040-vcVA?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEdVj9oB4CAhnQ-TRyk-j27eD8jqwhJpxJY',
         githubLink: 'https://github.com/Nikhil2253/WorldGame',
     },
     {
@@ -95,7 +95,7 @@ const projects = [
             shine: 'rgba(170, 242, 239, 0.4)',
         },
         icon: Stethoscope,
-        demoLink: 'https://www.youtube.com/watch?v=xxxxxxxx',
+        demoLink: 'https://www.linkedin.com/posts/nikhil-saxena-76901a2a5_mernstack-hospitalmanagementsystem-webapplication-activity-7315203906207170560-gRGS?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEdVj9oB4CAhnQ-TRyk-j27eD8jqwhJpxJY',
         githubLink: 'https://github.com/Nikhil2253/Hospital-Management-System--HMS-NICK',
     },
     {
@@ -111,7 +111,7 @@ const projects = [
             shine: 'rgba(255, 165, 0, 0.4)',
         },
         icon: Dices,
-        demoLink: 'https://www.youtube.com/watch?v=xxxxxxxx',
+        demoLink: 'https://www.linkedin.com/posts/nikhil-saxena-76901a2a5_i-made-snake-and-ladder-game-using-html-css-activity-7147153046567804928-BXbW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEdVj9oB4CAhnQ-TRyk-j27eD8jqwhJpxJY',
         githubLink: 'https://github.com/Nikhil2253/SNAKE-AND-LADDER',
     },
     {
@@ -127,7 +127,7 @@ const projects = [
             shine: 'rgba(255, 192, 203, 0.4)',
         },
         icon: Trophy,
-        demoLink: 'https://www.youtube.com/watch?v=xxxxxxxx',
+        demoLink: 'https://www.linkedin.com/posts/nikhil-saxena-76901a2a5_hello-everyone-today-i-completed-my-ludo-activity-7181238740613279746-oHFm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEdVj9oB4CAhnQ-TRyk-j27eD8jqwhJpxJY',
         githubLink: 'https://github.com/Nikhil2253/',
     },
     {
@@ -143,7 +143,7 @@ const projects = [
             shine: 'rgba(160, 174, 192, 0.4)',
         },
         icon: Ticket,
-        demoLink: 'https://www.youtube.com/watch?v=xxxxxxxx',
+        demoLink: 'https://www.linkedin.com/posts/nikhil-saxena-76901a2a5_mernstack-webdevelopment-projectcompletion-activity-7262253611315789825-msS1?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEdVj9oB4CAhnQ-TRyk-j27eD8jqwhJpxJY',
         githubLink: 'https://github.com/Nikhil2253',
     },
 ];
@@ -243,7 +243,7 @@ const ProjectCard = ({ project }) => {
                 <div className="flex justify-between items-center p-4">
                    
                     <a
-                        href="/details"
+                        href={`/details/underconstruction`}
                         className="flex-grow text-center text-sm font-bold text-white py-2 rounded-[10px] transition-colors bg-gray-900 duration-300 hover:bg-opacity-80"
                     >
                         Details
